@@ -1,7 +1,9 @@
 #include <iostream>
-using namespace std;
+using namespace std;  // "using" declaration is important
 
 int main() {
+    cout << /* "*/" /* "/*" */;  // cool trick
+    
     cout << "Give me a name and city: " << endl;
     char name[10] = "", city[10] = "";
     cin >> name >> city;
