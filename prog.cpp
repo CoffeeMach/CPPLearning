@@ -2,9 +2,9 @@
 using namespace std;
 
 int main() {
-    std::cout << "Enter two numbers:" << std::endl;
-    int n1 = 0, n2 = 0;
-    std::cin >> n1 >> n2;
-    std::cout << "The sum of " << n1 << " and " << n2 << " is " << n1+n2 << std::endl;
+    std::cout << "Give me a name and city: " << std::endl;
+    char name[10] = "", city[10] = "";
+    std::cin >> name >> city;
+    std::cout << "The name of the contestant is " << name << " from the land of " << city << "!" << std::endl;
     return 0;
 }
