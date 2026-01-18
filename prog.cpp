@@ -1,11 +1,23 @@
 #include <iostream>
+#include <string>
+
 using namespace std;  // "using" declaration is important
 
 int main() {
-    int sum = 0, value = 0;
-    //read until end of file (until an invalid value is given to terminal)
-    while (cin >> value)
-        sum += value;
-    cout << "Sum = " << sum << endl;
+    string password, pass;
+
+    cout << "Determine the password: " << endl;
+    cin >> password;
+
+    while (true) {
+        cout << "Enter the password: " << endl;
+        cin >> pass;
+        if (password == pass) {
+            cout << "logged in" << endl;
+        } else {
+            cout << "wrong password" << endl;
+        }
+    }
+
     return 0;
 }
