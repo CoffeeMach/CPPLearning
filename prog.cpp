@@ -2,13 +2,10 @@
 using namespace std;  // "using" declaration is important
 
 int main() {
-    cout << "Enter number: " << endl;
-    int count = 0, sum = 0, val;
-    cin >> val;
-    while (0 <= val) {
-        sum += val;
-        val--;
-    }
-    cout << "The sum is " << sum << endl;
+    int sum = 0, value = 0;
+    //read until end of file (until an invalid value is given to terminal)
+    while (cin >> value)
+        sum += value;
+    cout << "Sum = " << sum << endl;
     return 0;
 }
